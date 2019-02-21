@@ -181,6 +181,13 @@ var _default = {
     },
     version: '>=0.1.0'
   },
+  getAddressInfo: {
+    category: 'wallet',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.3.18'
+  },
   getBalance: {
     category: 'wallet',
     features: {
@@ -489,6 +496,13 @@ var _default = {
     },
     version: '>=0.15.0'
   },
+  loadWallet: {
+    category: 'wallet',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.15.0'
+  },
   lockUnspent: {
     category: 'wallet',
     features: {
@@ -612,6 +626,13 @@ var _default = {
     category: 'mining',
     version: '>=0.7.0'
   },
+  unloadWallet: {
+    category: 'wallet',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.15.0'
+  },
   upTime: {
     category: 'control',
     version: '>=0.15.0'
@@ -638,6 +659,9 @@ var _default = {
   },
   walletPassphrase: {
     category: 'wallet',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
     obfuscate: {
       request: {
         default: params => (0, _lodash.set)([...params], '[0]', '******'),
